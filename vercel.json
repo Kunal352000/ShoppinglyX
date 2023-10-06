@@ -4,13 +4,13 @@
   {
           "src":"shoppinglyx/wsgi.py",
           "use":"@vercel/python",
-          "config":{"maxLamdaSize":"15mb", "runtime":"python 3.11"}
+          "config":{"maxLamdaSize":"15mb", "runtime":"python 3.11.5"}
   },
   {
           "src":"build_files.sh",
           "use":"@vercel/static-build",
           "config":{
-                    "distDir":"staticfiles_build"
+              "distDir":"staticfiles_build"
           }
   }
   ],

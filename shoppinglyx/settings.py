@@ -25,7 +25,7 @@ SECRET_KEY = 'm7757tfa4t=!#52_m1g6n8h(5_5-2@r8q$_3js367+0!4$d%-*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
 # Application definition
@@ -127,4 +127,4 @@ SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
 import os
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static')
-STATIC_URL = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
